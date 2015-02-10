@@ -8,6 +8,7 @@ addressApp.controller('ContactNewCtrl',['$scope','$http','$routeParams', '$locat
             email:$scope.email,
             streetAddress:$scope.streetAddress,
             city:$scope.city,
+            state:$scope.state,
             zip:$scope.zip,
             phone:$scope.phone,
             notes:$scope.notes
@@ -19,6 +20,7 @@ addressApp.controller('ContactNewCtrl',['$scope','$http','$routeParams', '$locat
             $scope.email = "";
             $scope.streetAddress = "";
             $scope.city = "";
+            $scope.state = "";
             $scope.zip = "";
             $scope.phone = "";
             $scope.notes = "";

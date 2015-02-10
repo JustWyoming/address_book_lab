@@ -7,9 +7,8 @@
         <div ng-repeat="contact in contacts">
         <h3>{{contact.firstName}} {{contact.lastName}}</h3>
         <h4>{{contact.email}}<br><small>{{contact.phone}}</small></h4>
-        <p>{{contact.streetAddress}}</p>
-        <p>{{contact.city}}, {{contact.state}} {{contact.zip}}</p>
-        <p>{{contact.notes | limit: 40 }}</p>
+       <p>{{contact.streetAddress}}
+        <br>{{contact.city}}, {{contact.state}} {{contact.zip}}</p>
         <a href="/contact/{{contact.id}}">Read more...</a>
         <button class="btn btn-danger btn-xs" ng-click="deleteContact($index)"><i class="glyphicon glyphicon-trash"></i></button>
         <button class="btn btn-success btn-xs" ng-click="editContact($index)"><i class="glyphicon glyphicon-pencil"></i></button>

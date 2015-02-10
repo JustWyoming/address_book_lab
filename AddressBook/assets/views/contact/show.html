@@ -1,24 +1,16 @@
 <div class="row">
     <div class="col-sm-8">
           <a href="/">&larr; Back to all contacts</a><br><br>
-        <h1>{{contact.firstName}}
+
               <button class="btn btn-success btn-xs pull-right" ng-click="editContact()"><i class="glyphicon glyphicon-pencil"></i></button>
         </h1>
-        <p>{{contact.firstName}}</p>
+        <h2>{{contact.firstName}} {{contact.lastName}}</h2>
+        <h4>{{contact.email}}<br><small>{{contact.phone}}</small></h4>
+         <p>{{contact.streetAddress}}
+        <br>{{contact.city}}, {{contact.state}} {{contact.zip}}</p>
+        <h4>Notes:</h4>
+        <p>{{contact.notes}}</p>
 
-       <!--  <hr>
-        <h3>Comments:</h3>
-        <form class="form" ng-submit="addComment()">
-            <div class="form-group">
-                <textarea ng-model="commentText" class="form-control" required></textarea>
-            </div>
-            <button class="btn btn-primary">Add Comment</button>
-        </form>
-        <hr>
-        <div class="well" ng-repeat="comment in post.comments | orderBy: 'createdAt':true">
-            <p>{{comment.body}}</p>
-            <p><i>{{comment.createdAt | date: 'short'}}</i></p>
-        </div> -->
 
     </div><!--close of column-->
 </div><!--close of row-->

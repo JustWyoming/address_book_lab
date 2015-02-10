@@ -3,7 +3,10 @@ addressApp.controller('HomeCtrl',['$scope','$http','$modal', function($scope, $h
     $scope.contacts = [];
 
     var req ={
-        url: '/.api/contact'
+        url: '/.api/contact',
+         params: {
+            'sort': 'firstName asc'
+        }
 
     }
 

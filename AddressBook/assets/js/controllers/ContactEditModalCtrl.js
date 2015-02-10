@@ -21,7 +21,7 @@ addressApp.controller('ContactEditModalCtrl', ['$scope', '$http', '$modalInstanc
             notes: $scope.notes
         };
 
-        $http.put('/.api/post/'+ post.id, postData)
+        $http.put('/.api/contact/'+ contact.id, contactData)
         .success(function(data){
             $modalInstance.close(data);
         })
